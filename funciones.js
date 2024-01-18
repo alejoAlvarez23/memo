@@ -1,4 +1,5 @@
-const totalCards = prompt('ingrese el total de cartas con las q quiere jugar');
+
+let totalCards = prompt('ingrese un numero par de cartas con las desea jugar');
 let cards = [];
 let selectedCards = [];
 let valuesUsed = [];
@@ -7,6 +8,8 @@ let currentattempts = 0;
 let points = 0
 
 let cardTemplate = '<div class="card"> <div class="back"> </div> <div class="face"> </div> </div>';
+
+
 
 function activate(e){
     if (currentMove < 2){
@@ -23,7 +26,10 @@ function activate(e){
                     selectedCards = []
                     currentMove = 0
                     points++;
-                    document.querySelector('#puntos').innerHTML = points + ' puntos'
+                    currentattempts--;
+                    document.querySelector('#puntos').innerHTML = points + '0 puntos'
+                    document.querySelector('#stats').innerHTML = currentattempts + ' intentos'
+
                 }
                 else{
                     setTimeout(() => {
@@ -49,7 +55,13 @@ function randomValue() {
     }
 }
 
-for (let i=0; i < totalCards; i++){
+
+while (totalCards % 2 == 1){
+    totalCards = prompt('PONE UN NUMERO PAR MOGOLICO');
+}
+
+ if (totalCards % 2 == 0 ){
+  for (let i=0; i < totalCards; i++){
     let div = document.createElement('div');
     div.innerHTML = cardTemplate;
     cards.push(div);
@@ -57,5 +69,7 @@ for (let i=0; i < totalCards; i++){
     randomValue();
     cards[i].querySelectorAll('.face')[0].innerHTML = valuesUsed[i]
     cards[i].querySelectorAll('.card')[0].addEventListener('click', activate)
-    
 }
+}
+
+

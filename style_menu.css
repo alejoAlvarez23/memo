@@ -4,9 +4,9 @@ body{
 }
 
 #logo{
+    padding: 2rem;
     width: 100vw;
-    height: 60vh;
-    display: inline-block;
+    text-align: center;
 }
 #titulo{
     font-family: 'Arvo', serif;

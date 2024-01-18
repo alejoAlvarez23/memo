@@ -12,7 +12,7 @@
 
 body{
     margin: 0;
-    background-color: black;
+    /* background-color: black; */
 }
 
 #wrapper {
@@ -21,7 +21,7 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 3.5rem;
+    padding-top: 10rem;
     justify-content: space-evenly;
 }
 
@@ -35,13 +35,13 @@ body{
 }
 
 #stats{
-    background-color: #000000dc;
+    background-color: #00000060;
     color: #ffffff;
-    text-shadow: 0.5px 0.5px 8px #ff7272;
+    text-shadow: 0.5px 0.5px 8px #ffffff;
     position: fixed;
-    padding: 1rem;
+    padding: 1rem 2rem;
     text-align: left;
-    width: calc(100% - 2rem);
+    width: 100%;
     font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     z-index: 1;
@@ -51,7 +51,7 @@ body{
     text-shadow: 0.5px 0.5px 10px #92ffa1;
     position: fixed;
     padding: 1rem;
-    text-align: right;
+    text-align: center;
     width: calc(100% - 2rem);
     font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -59,6 +59,28 @@ body{
 
 }
 
+#salir{
+    color: #e2ffff;
+    text-shadow: 0.5px 0.5px 10px #fa0606;
+    position: fixed;
+    padding: 1rem;
+    text-align: right;
+    width: calc(100% - 2rem);
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: 1;
+}
+#salir_juego:hover{
+    color: #ff0000;
+    text-shadow: 0px 0px 20px #5a0000;
+    transition: all .5s;
+}
+#salir_juego{
+    text-decoration: none;
+    color: #ffffff ;
+    transition: .8s;
+
+}
 
 .card{
     width: 100px;
@@ -67,7 +89,8 @@ body{
     position: relative;
     transition: transform .5s;
     transform-style: preserve-3d;
-    animation: fadeIn 1.3s;
+    animation: fadeIn 2s;
+    border-radius: 1rem;
 
 }
 

@@ -4,7 +4,9 @@ body{
 }
 
 #logo{
+    background: url(/imges/icono.png) center / contain no-repeat;
     padding: 2rem;
+    height: 50vh;
     width: 100vw;
     text-align: center;
 }

@@ -1,5 +1,19 @@
+body{
+    overflow: hidden;
+
+}
+
 #logo{
     width: 100vw;
     height: 60vh;
     display: inline-block;
+}
+#titulo{
+    font-family: 'Arvo', serif;
+    text-align: center;
+}
+nav{
+    text-align: center;
+    width: 99%;
+    padding-top: 1rem;
 }
